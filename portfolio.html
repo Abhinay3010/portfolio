@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abhinay Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-a">A</i>
+                        <div class="logo-text">Abhinay Reddi</div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">resume</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="C:\Users\DHH_SVR\Desktop\portfolio/abhi.jpg" alt="Profile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi i'm<span class="input"> JavaFullstack Developer</span></h5>
+                        <h1>Abhinay Reddi</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, nihil? Sapiente, fugit doloremque repellendus facere mollitia autem quam repellat iusto officiis perspiciatis, omnis id consequatur labore officia illum. Ipsum, ullam!
+                        </p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download Cv</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--typed js effect for typing effect-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+        <script>
+            /* creating show hide nav bar button  */
+            var togglebtn=document.querySelector(".togglebtn");
+            var nav=document.querySelector(".navlinks");
+            var links=document.querySelector(".navlinks li");
+            togglebtn.addEventListener("click",function(){
+                this.classList.toggle("click");
+                nav.classList.toggle("open");
+            })
+            var typed=new Typed(".input",{
+                strings:["",""],
+                typedSpeed:70,
+                backSpeed:50,
+                loop:true
+            })
+        </script>
+    </body>
+</html>
